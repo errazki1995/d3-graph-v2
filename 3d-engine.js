@@ -774,7 +774,7 @@ var i = 0,
 var tree = d3.layout.tree().nodeSize([70, 40]);
 var diagonal = d3.svg.diagonal()
     .projection(function (d) {
-    return [d.x + rectW / 2, d.y + rectH / 2];
+    return [d.y + rectW / 2, d.x + rectH / 2];
 });
 
 var svg = d3.select("#body").append("svg").attr("width", 1000).attr("height", 1000)
@@ -847,7 +847,7 @@ function update(source) {
     var nodeUpdate = node.transition()
         .duration(duration)
         .attr("transform", function (d) {
-        return "translate(" + d.x + "," + d.y + ")";
+        return "translate(" + d.y + "," + d.x + ")";
     });
 
     nodeUpdate.select("rect")
