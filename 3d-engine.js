@@ -956,7 +956,7 @@ function update(source) {
 
 // Toggle children on click.
 function click(d) {
-   
+    alert("droit")
     if (d.children) {
         d._children = d.children;
         d.children = null;
@@ -969,7 +969,7 @@ function click(d) {
 
 // Toggle children on click.
 function click2(d) {
- 
+    alert("gauche")
     if (d.children) {
         d._children = d.children;
         d.children = null;
